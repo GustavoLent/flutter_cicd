@@ -7,6 +7,9 @@ on:
 defaults:
   run:
     working-directory: app
+   create:
+    tags:
+      - v*
 
 jobs:
   version:
