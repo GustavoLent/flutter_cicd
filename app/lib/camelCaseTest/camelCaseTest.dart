@@ -1,3 +1,4 @@
+import 'package:app/StartsUpperCasedTest/StartsUpperCasedTest.dart';
 import 'package:flutter/material.dart';
 
 class CamelCaseTest extends StatefulWidget {
@@ -31,6 +32,7 @@ class _CamelCaseTestState extends State<CamelCaseTest> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            StartsUpperCasedTest(),
           ],
         ),
       ),
