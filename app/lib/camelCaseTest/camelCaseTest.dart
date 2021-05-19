@@ -1,3 +1,4 @@
+import 'package:app/LALAPasswordValidation.dart';
 import 'package:app/StartsUpperCasedTest/StartsUpperCasedTest.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,7 @@ class CamelCaseTest extends StatefulWidget {
 
 class _CamelCaseTestState extends State<CamelCaseTest> {
   int _counter = 0;
+  bool validation = LALAPasswordValidation();
 
   void _incrementCounter() {
     setState(() {
