@@ -1,33 +1,11 @@
-import 'package:app/camelCaseTest/camelCaseTest.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class CamelCaseTest extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CamelCaseTest(),
-    );
-  }
+  _CamelCaseTestState createState() => _CamelCaseTestState();
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _CamelCaseTestState extends State<CamelCaseTest> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -40,7 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Camel Case Test"),
       ),
       body: Center(
         child: Column(
